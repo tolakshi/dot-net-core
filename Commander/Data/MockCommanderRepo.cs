@@ -39,5 +39,10 @@ namespace Commander.Data
 
 
         }
+
+        public void DeleteCommand(Command cmd)
+        {
+
+        }
     }
 }
