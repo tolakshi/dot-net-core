@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "KlddR9XFuCZhSBYjS/xd0HHbI7Kqh7vS8/sTl+HvfcnVEUddMb4db/EaqCBpXSUzf5yUZrvjYUE44qU9qclLTA==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\tolak\\Development\\dot-net-core\\CoreCommander\\CoreCommander\\CoreCommander.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Swashbuckle.AspNetCore. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Swashbuckle.AspNetCore",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
