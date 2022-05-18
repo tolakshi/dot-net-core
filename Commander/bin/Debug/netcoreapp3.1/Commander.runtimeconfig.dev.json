@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\tolak\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\tolak\\.nuget\\packages"
+    ]
+  }
+}
