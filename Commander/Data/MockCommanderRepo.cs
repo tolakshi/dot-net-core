@@ -33,5 +33,11 @@ namespace Commander.Data
 
 
         }
+
+        public void UpdateCommand(Command cmd)
+        {
+
+
+        }
     }
 }
