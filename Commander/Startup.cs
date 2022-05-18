@@ -13,6 +13,7 @@ using Microsoft.Extensions.Logging;
 using Commander.Data;
 using Commander.Models;
 using Microsoft.EntityFrameworkCore;
+using AutoMapper;
 
 namespace Commander
 {
@@ -27,10 +28,18 @@ namespace Commander
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllers();
+
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+            //Method 1: Calls the values hard coded in the class MockCommanderRepo : ICommanderRepo implementation
+            //services.AddScoped<ICommanderRepo, MockCommanderRepo>();
+
+            //Method 2: Gets the values from DB through SqlCommanderRepo : ICommanderRepo implementation
             services.AddDbContext<CommanderContext>(opt => opt.UseSqlServer
             (Configuration.GetConnectionString("CommanderConnection")));
-            services.AddControllers();
-            services.AddScoped<ICommanderRepo, MockCommanderRepo>();
+            //Gets the values from DB through SqlCommanderRepo : ICommanderRepo implementation
+            services.AddScoped<ICommanderRepo, SqlCommanderRepo>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

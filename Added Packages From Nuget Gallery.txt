@@ -1,0 +1,19 @@
+First for the below 'add package' commands to work on CLI
+
+1. dotnet nuget add source -name nuget.org https://api.nuget.org/v3/index.jason
+
+Then the following
+
+1. dotnet add package Microsoft.EntityFrameworkCore --version 3.1.3
+2. dotnet add package Microsoft.EntityFrameworkCore.Design --version 3.1.3
+3. dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 3.1.3
+4. dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection --version 3.1.3
+
+
+
+To Remove any package
+
+1. dotnet remove package Microsoft.EntityFrameworkCore
+2. dotnet remove  package Microsoft.EntityFrameworkCore.Design
+3. dotnet remove  package Microsoft.EntityFrameworkCore.SqlServer
+4. dotnet remove  package AutoMapper.Extensions.Microsoft.DependencyInjection
